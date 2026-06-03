@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  Mealo8
+//  MealoWatch Watch App
 //
-//  Created by Rahaf on 03/06/2026.
+//  Created by Rahaf on 07/06/2026.
 //
 
 import SwiftUI
@@ -13,7 +13,7 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, Team8!")
+            Text("Hello, world!")
         }
         .padding()
     }
