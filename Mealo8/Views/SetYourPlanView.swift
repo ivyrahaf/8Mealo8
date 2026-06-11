@@ -1,11 +1,16 @@
+//
+//  SetYourPlanView.swift
+//  Mealo8
+//
+
 import SwiftUI
 import SwiftData
 
-// MARK: - PAGE 1: Set Your Plan View
 struct SetYourPlanView: View {
     var onDone: () -> Void
 
     @Environment(\.modelContext) private var modelContext
+    @AppStorage("userName") private var storedName: String = "Friend"
 
     @State private var userName: String = ""
     @State private var mealCount: Double = 0
@@ -59,9 +64,13 @@ struct SetYourPlanView: View {
                             
                             NavigationLink {
                                 CustomizeMealsView(meals: $meals, onDone: {
+                                    // Save name to @AppStorage for homepage greeting
+                                    let finalName = userName.trimmingCharacters(in: .whitespaces)
+                                    storedName = finalName.isEmpty ? "Friend" : finalName
+
+                                    // Also save UserProfile for InsightsView
                                     let profile = UserProfile(
-                                        name: userName.trimmingCharacters(in: .whitespaces).isEmpty
-                                            ? "Friend" : userName.trimmingCharacters(in: .whitespaces),
+                                        name: storedName,
                                         signupDate: Date(),
                                         dailyMealGoal: Int(mealCount)
                                     )

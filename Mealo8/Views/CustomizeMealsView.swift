@@ -5,7 +5,6 @@
 //  Created by Rahaf on 11/06/2026.
 //
 
-
 import SwiftUI
 
 // MARK: - PAGE 2: Customize Meals View

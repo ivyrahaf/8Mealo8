@@ -7,7 +7,7 @@ import Foundation
 import WatchConnectivity
 import SwiftData
 
-final class WatchSyncManager: NSObject, ObservableObject, WCSessionDelegate {
+final class WatchSyncManager: NSObject, WCSessionDelegate {
 
     static let shared = WatchSyncManager()
     var modelContext: ModelContext?
@@ -20,7 +20,6 @@ final class WatchSyncManager: NSObject, ObservableObject, WCSessionDelegate {
         }
     }
 
-    // Send meal from Watch → iPhone
     func sendMealToPhone(mealName: String, mood: String) {
         guard WCSession.default.activationState == .activated else { return }
         let msg: [String: Any] = [
@@ -36,7 +35,6 @@ final class WatchSyncManager: NSObject, ObservableObject, WCSessionDelegate {
         }
     }
 
-    // Receive meal from iPhone → Watch
     func session(_ session: WCSession, didReceiveMessage message: [String: Any]) {
         handleIncoming(message)
     }
@@ -61,6 +59,5 @@ final class WatchSyncManager: NSObject, ObservableObject, WCSessionDelegate {
         }
     }
 
-    // Required delegate
     func session(_ session: WCSession, activationDidCompleteWith state: WCSessionActivationState, error: Error?) {}
 }

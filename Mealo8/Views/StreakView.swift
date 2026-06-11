@@ -122,7 +122,7 @@ struct WeekTrackerRow: View {
                         Circle()
                             .strokeBorder(
                                 completed[i]
-                                    ? Color("apporange").opacity(0.90)
+                                    ? Color("orange").opacity(0.90)
                                     : Color.primary.opacity(0.18),
                                 lineWidth: 1.8
                             )
@@ -131,12 +131,12 @@ struct WeekTrackerRow: View {
                         // Fill tint when complete
                         if completed[i] {
                             Circle()
-                                .fill(Color("apporange").opacity(0.12))
+                                .fill(Color("orange").opacity(0.12))
                                 .frame(width: 36, height: 36)
 
                             Image(systemName: "checkmark")
                                 .font(.system(size: 13, weight: .bold))
-                                .foregroundStyle(Color("apporange"))
+                                .foregroundStyle(Color("orange"))
                         }
                     }
                 }
@@ -173,7 +173,7 @@ struct StreakPathSection: View {
             // Label
             Text("Streak path")
                 .font(.system(size: 15, weight: .semibold, design: .rounded))
-                .foregroundStyle(Color("appbrown"))
+                .foregroundStyle(Color("brown"))
 
             // Copy
             Text("Every day you show up,\nyour little Orange grows!")
@@ -192,7 +192,7 @@ struct StreakPathSection: View {
                                 .scaledToFit()
                                 .frame(width: stage.targetSize * 0.75, height: stage.targetSize * 0.75)
                                 .foregroundStyle(isActive
-                                    ? Color("appgreen")
+                                    ? Color("green")
                                     : Color.gray.opacity(0.35))
                         } else {
                             Image(stage.imageName)
@@ -237,14 +237,14 @@ struct StreakProgressBar: View {
             ZStack(alignment: .leading) {
                 // Track
                 RoundedRectangle(cornerRadius: barH / 2)
-                    .fill(Color("apporange").opacity(0.18))
+                    .fill(Color("orange").opacity(0.18))
                     .frame(width: trackW, height: barH)
 
                 // Fill
                 RoundedRectangle(cornerRadius: barH / 2)
                     .fill(
                         LinearGradient(
-                            colors: [Color("appyellow").opacity(0.9), Color("apporange")],
+                            colors: [Color("yellow").opacity(0.9), Color("orange")],
                             startPoint: .leading,
                             endPoint: .trailing
                         )
@@ -263,8 +263,8 @@ struct StreakProgressBar: View {
                         .frame(width: pillW, height: barH)
                         .background(
                             RoundedRectangle(cornerRadius: barH / 2)
-                                .fill(Color("apporange"))
-                                .shadow(color: Color("apporange").opacity(0.35),
+                                .fill(Color("orange"))
+                                .shadow(color: Color("orange").opacity(0.35),
                                         radius: 6, x: 0, y: 3)
                         )
                 }

@@ -1,6 +1,6 @@
 //
 //  Mealo_Watch_AppApp.swift
-//  Mealo Watch App Watch App
+//  MealoWatch Watch App
 //
 
 import SwiftUI
@@ -10,7 +10,7 @@ import SwiftData
 struct MealoWatchApp: App {
 
     let container: ModelContainer = {
-        let schema = Schema([MealLog.self, UserProfile.self])
+        let schema = Schema([WatchMealLog.self])
         let config = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
         do {
             return try ModelContainer(for: schema, configurations: config)
@@ -22,6 +22,11 @@ struct MealoWatchApp: App {
     var body: some Scene {
         WindowGroup {
             WatchContentView()
+                .onAppear {
+                    WatchSyncManager.shared.modelContext = container.mainContext
+                    MealNotificationManager.shared.requestPermission()
+                    MealNotificationManager.shared.scheduleMealReminders()
+                }
         }
         .modelContainer(container)
     }

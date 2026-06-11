@@ -1,16 +1,3 @@
-
-//  InsightsView.swift
-//  Mealo
-//
-//  Created by Rahaf on 31/05/2026.
-
-//  1. @StateObject uses default init (no args)
-//  2. calendarSection hidden when selectedTimeframe == .day
-//  3. CalendarDayCell: circles only on logged days, mood-colored borders, no stray circles
-//  4. Log Meal FAB removed (lives on home screen)
-//  5. Preview uses fixed sample days (not random)
-//
-
 import SwiftUI
 import SwiftData
 

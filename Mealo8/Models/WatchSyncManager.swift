@@ -1,5 +1,13 @@
 //
 //  WatchSyncManager.swift
+//  Mealo8
+//
+//  Created by Rahaf on 11/06/2026.
+//
+
+
+//
+//  WatchSyncManager.swift
 //  Mealo8 (iOS target ONLY)
 //
 

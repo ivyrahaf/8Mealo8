@@ -1,21 +1,18 @@
-//
 //  ContentView.swift
 //  Mealo8
 //
-//  Created by Rahaf on 03/06/2026.
+//  Root view — no tab bar.
+//  HomepageView owns its own NavigationStack, so nothing extra is needed here.
+//  Navigation flow:
+//    HomepageView  ──(tap 🔥N)──▶ StreakView      (sheet)
+//    HomepageView  ──(tap insight card)──▶ InsightsView  (push)
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, Team8!")
-        }
-        .padding()
+        HomepageView()
     }
 }
 

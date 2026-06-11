@@ -7,7 +7,25 @@
 		<key>Mealo8.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>MealoWatch Watch App.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>5D809C112FD061470065CFB4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5DCF58472FD4D35F00D47151</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

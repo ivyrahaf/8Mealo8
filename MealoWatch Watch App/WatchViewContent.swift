@@ -1,13 +1,11 @@
 //
 //  WatchViewContent.swift
-//  Mealo Watch App Watch App
+//  MealoWatch Watch App
 //
 
 import SwiftUI
-import SwiftData
 
 struct WatchContentView: View {
-
     var body: some View {
         TabView {
             WatchStateView()
