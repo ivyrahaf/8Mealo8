@@ -35,7 +35,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5D809C122FD061470065CFB4 /* Mealo8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mealo8.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D809C122FD061470065CFB4 /* MyMealo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMealo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DCF58482FD4D35F00D47151 /* MealoWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MealoWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -82,7 +82,7 @@
 		5D809C132FD061470065CFB4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5D809C122FD061470065CFB4 /* Mealo8.app */,
+				5D809C122FD061470065CFB4 /* MyMealo.app */,
 				5DCF58482FD4D35F00D47151 /* MealoWatch Watch App.app */,
 			);
 			name = Products;
@@ -91,9 +91,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5D809C112FD061470065CFB4 /* Mealo8 */ = {
+		5D809C112FD061470065CFB4 /* MyMealo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5D809C1D2FD061480065CFB4 /* Build configuration list for PBXNativeTarget "Mealo8" */;
+			buildConfigurationList = 5D809C1D2FD061480065CFB4 /* Build configuration list for PBXNativeTarget "MyMealo" */;
 			buildPhases = (
 				5D809C0E2FD061470065CFB4 /* Sources */,
 				5D809C0F2FD061470065CFB4 /* Frameworks */,
@@ -108,11 +108,11 @@
 			fileSystemSynchronizedGroups = (
 				5D809C142FD061470065CFB4 /* Mealo8 */,
 			);
-			name = Mealo8;
+			name = MyMealo;
 			packageProductDependencies = (
 			);
 			productName = Mealo8;
-			productReference = 5D809C122FD061470065CFB4 /* Mealo8.app */;
+			productReference = 5D809C122FD061470065CFB4 /* MyMealo.app */;
 			productType = "com.apple.product-type.application";
 		};
 		5DCF58472FD4D35F00D47151 /* MealoWatch Watch App */ = {
@@ -169,7 +169,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5D809C112FD061470065CFB4 /* Mealo8 */,
+				5D809C112FD061470065CFB4 /* MyMealo */,
 				5DCF58472FD4D35F00D47151 /* MealoWatch Watch App */,
 			);
 		};
@@ -347,6 +347,7 @@
 				DEVELOPMENT_TEAM = R89G8CXH9H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MyMealo;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -380,6 +381,7 @@
 				DEVELOPMENT_TEAM = R89G8CXH9H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MyMealo;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -483,7 +485,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5D809C1D2FD061480065CFB4 /* Build configuration list for PBXNativeTarget "Mealo8" */ = {
+		5D809C1D2FD061480065CFB4 /* Build configuration list for PBXNativeTarget "MyMealo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5D809C1E2FD061480065CFB4 /* Debug */,
