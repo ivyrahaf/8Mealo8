@@ -30,8 +30,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5D809C112FD061470065CFB4"
-               BuildableName = "Mealo8.app"
-               BlueprintName = "Mealo8"
+               BuildableName = "MyMealo.app"
+               BlueprintName = "MyMealo"
                ReferencedContainer = "container:Mealo8.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
